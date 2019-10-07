@@ -84,7 +84,7 @@ class Home extends Component {
                         {
                             this.state.squads.map(squad => {
                                 return (
-                                    <ProgressBar now={(squad.totalDoantions / this.state.maxSquad) * 100} label={`${squad.squad.name + ' ' + '£' + squad.totalDoantions}`} />
+                                    <ProgressBar now={(squad.totalDoantions / this.state.maxSquad) * 100} label={`${squad.squad.name + squad.totalDoantions}`} />
                                 )
                             })
                         }
